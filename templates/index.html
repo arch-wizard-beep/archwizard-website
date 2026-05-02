@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block title %}Resume - Niroj Kumar Naik{% endblock %}
+{% block link %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'styles/background.css') }}">
+{% endblock %}
+{% block content %}
+    <div class="page-container">
+        <section class="resume-card">
+            <header class="resume-header">
+                <span class="hero-badge">Resume</span>
+                <h1>Niroj Kumar Naik</h1>
+                <div class="personal-info">
+                    <p><strong>Age:</strong> 25</p>
+                    <p><strong>Date of Birth:</strong> 21st October 2002</p>
+                    <p><strong>Profession:</strong> Security Researcher</p>
+                </div>
+            </header>
+
+            <section class="resume-section">
+                <h2>Professional Summary</h2>
+                <p>
+                    As a dedicated Security Researcher, I specialize in malware analysis, focusing on code and behavior examination to uncover threats. Beyond my core profession, I enjoy building websites and exploring new technologies to expand my skill set.
+                </p>
+            </section>
+
+            <section class="resume-section">
+                <h2>Skills & Interests</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h3>Web Development</h3>
+                        <p>I love creating websites, designing user interfaces, and bringing ideas to life through code.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>3D Modeling with Blender</h3>
+                        <p>Recently learned Blender, which has been fascinating for sculpting 3D objects and characters, enhancing my creative skills.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Chess Enthusiast</h3>
+                        <p>I enjoy playing and studying historic chess games, analyzing strategies from legendary matches.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Malware Analysis</h3>
+                        <p>My favorite task involves deep code and behavior analysis of malware to understand and mitigate security risks.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="resume-section">
+                <h2>Current Focus</h2>
+                <p>
+                    I am currently studying reverse engineering and malware development to deepen my expertise in cybersecurity and offensive security techniques.
+                </p>
+            </section>
+
+            <div class="page-footer">
+                <a class="primary-btn secondary-btn" href="{{ url_for('improvement') }}">Improvement Journey</a>
+            </div>
+        </section>
+    </div>
+{% endblock %}

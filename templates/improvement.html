@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block title %}Improvement Journey{% endblock %}
+
+{% block link %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/background.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="page-container">
+    <section class="blog-card">
+        <header class="card-header">
+            <span class="hero-badge">Blog Post</span>
+            <h1>My Website Improvement Journey</h1>
+            <p class="hero-subtitle">
+                I turned scattered notes and copied markdown into a clean, readable blog-style page to document the progress of this site.
+            </p>
+        </header>
+
+        <article class="blog-section">
+            <h2>Why I redesigned this page</h2>
+            <p>
+                The original text was plain and unstructured. Converting it into HTML with headings, cards, and better spacing makes the content easier to read and more professional.
+            </p>
+            <ul class="summary-list">
+                <li>Organized the page as a real blog post.</li>
+                <li>Used semantic sections instead of raw markdown formatting.</li>
+                <li>Added visual hierarchy with headings, cards, and code blocks.</li>
+            </ul>
+        </article>
+
+        <article class="blog-section">
+            <h2>What I improved</h2>
+            <div class="highlight-row">
+                <div class="blog-highlight">
+                    <strong>Structure</strong>
+                    <p>Separated the content into sections for readability and screen-friendly layout.</p>
+                </div>
+                <div class="blog-highlight">
+                    <strong>Design</strong>
+                    <p>Used the same glassmorphism style as the home page to keep the site consistent.</p>
+                </div>
+            </div>
+            <div class="highlight-row">
+                <div class="blog-highlight">
+                    <strong>Navigation</strong>
+                    <p>Added a clear link back to home so visitors can easily continue exploring the site.</p>
+                </div>
+                <div class="blog-highlight">
+                    <strong>Typography</strong>
+                    <p>Improved line spacing and font sizing for long-form reading.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="blog-section">
+            <h2>Lessons from the journey</h2>
+            <ul class="summary-list">
+                <li>Always start with semantic HTML before styling.</li>
+                <li>Use CSS classes for reusable design patterns.</li>
+                <li>Keep page styles consistent across the website.</li>
+                <li>Place important actions like navigation links in obvious spots.</li>
+            </ul>
+        </article>
+
+        <div class="page-footer">
+            <a class="primary-btn" href="{{ url_for('index') }}">Back Home</a>
+        </div>
+    </section>
+</div>
+{% endblock %}
